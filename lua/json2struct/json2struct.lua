@@ -1,12 +1,12 @@
 local Job = require("plenary.job")
 
-return function(json, name)
+return function(json, name, on_exit)
 	name = name or "JSON"
 
-	local job = Job:new({
+	Job:new({
 		command = "json2struct",
 		args = { "-name=" .. name },
 		writer = json,
-	}):sync()
-	return table.concat(job, "\n")
+		on_exit = on_exit,
+	}):start()
 end
