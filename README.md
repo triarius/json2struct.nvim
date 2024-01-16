@@ -20,4 +20,7 @@ Running the plugin requires `json2struct` to be in the `$PATH`, which the above 
 
 # Usage
 Select the JSON in Neovim. Enter the command `JSON2Struct`.
-The selection will be replaced by a Go struct type that is capable of unmarshalling the JSON.
+The selection will be replaced by a Go struct type that is capable of unmarshalling
+
+# Demo
+![demo](./demo/demo.gif)
