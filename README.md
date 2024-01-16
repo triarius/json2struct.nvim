@@ -14,6 +14,7 @@ Running the plugin requires `json2struct` to be in the `$PATH`, which the above 
 ```lua
 {
 	"triarius/json2struct.nvim",
+	dependencies = { "nvim-lua/plenary.nvim"}
 	config = true,
 }
 ```
